@@ -1,0 +1,21 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="~/ckeditor/ckeditor.js"></script>
+    <link href="~/ckeditor/contents.css" rel="stylesheet" />
+</head>
+<body>
+    <form action="/First/Editor" method="post">
+        <input type="submit" value="Save as PDF" />
+        <textarea id="editor" name="editor" placeholder="Enter Text Here!"></textarea>
+    </form>
+
+
+    <script>
+            CKEDITOR.replace('editor', {
+                extraPlugins: 'placeholder',
+                height: 220
+            });
+        </script>
+</body>
+</html>
